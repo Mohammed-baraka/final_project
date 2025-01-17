@@ -1,0 +1,23 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- الحالة عند الضغط -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/teal_700" /> <!-- لون عند الضغط -->
+            <corners android:radius="12dp" /> <!-- زوايا مستديرة -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/teal_900" /> <!-- حواف -->
+        </shape>
+    </item>
+
+    <!-- الحالة الافتراضية -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/teal_500" /> <!-- لون افتراضي -->
+            <corners android:radius="12dp" /> <!-- زوايا مستديرة -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/teal_700" /> <!-- حواف -->
+        </shape>
+    </item>
+</selector>

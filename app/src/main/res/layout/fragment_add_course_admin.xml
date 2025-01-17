@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spacing="16dp">
+
+        <EditText
+            android:id="@+id/courseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:padding="12dp"
+            android:background="@drawable/edittext_standard" />
+
+        <EditText
+            android:id="@+id/courseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Course Description"
+            android:padding="12dp"
+            android:background="@drawable/edittext_standard" />
+
+        <EditText
+            android:id="@+id/courseInstructor"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instructor Name"
+            android:padding="12dp"
+            android:background="@drawable/edittext_standard" />
+
+        <EditText
+            android:id="@+id/coursePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Price"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/edittext_standard" />
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_standard"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/courseImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:contentDescription="Course Image"
+            android:src="@drawable/img_5" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_standard"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/saveCourseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Course"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_standard"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
